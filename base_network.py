@@ -66,7 +66,7 @@ class Network(object):
                                   num_outputs=size,
                                   weights_regularizer=tf.contrib.layers.l2_regularizer(0.01),
                                   activation_fn=tf.nn.relu)
-      if opts.use_dropout:
+      if opts!=None and opts.use_dropout:
         layer = slim.dropout(layer, is_training=IS_TRAINING, scope="do%d" % i)
     return layer
 
