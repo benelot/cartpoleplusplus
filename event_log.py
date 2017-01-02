@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import event_pb2
+from tensorflow.core.util import event_pb2
 import gzip
 import matplotlib.pyplot as plt
 import numpy as np
